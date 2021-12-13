@@ -15,32 +15,13 @@
 
     <title>Grupo 13</title>
 
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="">
 
-    <script>
-
-        function sumar(){
-            var puntos = Number(document.getElementById("puntos").innerHTML);
-            //console.log("los puntos son:"+puntos);
-            //alert(puntos);
-            var suma = puntos+1;
-            document.getElementById("puntos").innerHTML = suma;
-
-        }
-
-        function calcular(){
-            var puntos = Number(document.getElementById("puntos").innerHTML);
-            if(puntos>10) { alert("Suficiente") } else { alert("Todavia no alcanza")}
-            
-        }
-
-
-    </script>
     
 </head>
 
 
-<body>
+<body style="font-family: 'Montserrat', sans-serif;">
 
     <div id="menu" style="width: 100%; float: left; padding: 20px 0 20px 0;">
         <div id="titulo" style="width: 70%; float: left;">Cynthia</div>
@@ -53,23 +34,13 @@
         </div>
     </div>
 
-    <div id="cuerpo">
-        <h3 style="text-align: center; color: #fff; margin-bottom: 50px;">Quien soy?</h3>
+    <div id="cuerpo" style="background-color: #1abc9c; width: 100%; height: 500px; float: left; padding: 100px 0 100px 0;">
+        <h3 style="text-align: center; color: #fff; margin-bottom: 50px;">Donde trabajo?</h3>
         <p style="text-align: center;"><img src="img/aguila.jpg" style="border-radius:200px;"></p>
         <h3 style="text-align: center; color: #fff">Soy un aventurero</h3>
     </div>
 
-    <div id="des">
-
-        <form>
-            <input type="button" value="CLICK PARA SUMAR PUNTOS" onclick="sumar()">
-            <P>PUNTOS: <SPAN id="puntos">0</SPAN></P>
-
-            <input type="button" value="CALCULAR" onclick="calcular()">
-        </form>
-
-
-    </div>
+    <div id="des"></div>
     
 </body>
 
